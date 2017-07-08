@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>	
+
 <header class="header fixed-top clearfix">
 <!--logo -->
 <div class="brand">
-    <a href="../" class="logo">
+    <a href="../../" class="logo">
         Travels
     </a>
     <div class="sidebar-toggle-box">
@@ -35,8 +36,8 @@
                 </c:if>
                 <c:forEach items="${message }" var="m">
 	                <li>
-	                    <a href="tipscheck.jsp">
-	                        <span class="photo"><img alt="avatar" src="../${m.photo }"></span>
+	                    <a href="../tipscheck.jsp">
+	                        <span class="photo"><img alt="avatar" src="../../${m.photo }"></span>
 	                                <span class="subject">
 	                                <span class="from">${m.user }</span>
 	                                <span class="time">${m.time }</span>
@@ -48,7 +49,7 @@
 	                </li>
                 </c:forEach>
                 <li>
-                    <a href="tipscheck.jsp">查看详细信息</a>
+                    <a href="../tipscheck.jsp">查看详细信息</a>
                 </li>
             </ul>
         </li>
@@ -64,14 +65,14 @@
         </li>
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <img alt="" src="../ourteam/1.jpg">
+                <img alt="" src="../../ourteam/1.jpg">
                 <span class="username">${managerlogin.name }</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="notachieve.jsp"><i class=" fa fa-suitcase"></i>个人信息</a></li>
-                <li><a href="notachieve.jsp"><i class="fa fa-cog"></i> 设置</a></li>
-                <li><a href="login.jsp??managerflag=1"><i class="fa fa-key"></i>退出</a></li>
+                <li><a href="../notachieve.jsp"><i class=" fa fa-suitcase"></i>个人信息</a></li>
+                <li><a href="../notachieve.jsp"><i class="fa fa-cog"></i> 设置</a></li>
+                <li><a href="../login.jsp??managerflag=1"><i class="fa fa-key"></i>退出</a></li>
             </ul>
         </li>
     </ul>

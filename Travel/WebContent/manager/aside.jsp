@@ -57,12 +57,10 @@
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-tasks"></i>
-                        <span>空</span>
+                        <span>玩游戏</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="#">空</a></li>
-                        <li><a href="#">空</a></li>
-						<li><a href="#">空</a></li>
+                        <li><a href="game/cutfruit.jsp">切水果&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-check text-success text-active"></i></a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
@@ -71,6 +69,7 @@
                         <span>空 </span>
                     </a>
                     <ul class="sub">
+                        <li><a href="#">空</a></li>
                         <li><a href="#">空</a></li>
                         <li><a href="#">空</a></li>
                     </ul>

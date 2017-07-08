@@ -74,7 +74,7 @@ public class ShowTipsTop extends HttpServlet {//显示攻略Servlet
 		ResultSet r=null;
 		try {
 			c=DButils.getConnection();
-			String sql="select *from tipstop where showflag=0;";//显示管理员未审核过的
+			String sql="select t.*,u.photo from tipstop t,user u where t.user=u.username and showflag=0;";//显示管理员未审核过的
 			p=c.prepareStatement(sql);
 			r=p.executeQuery();
 			while(r.next()){
@@ -86,6 +86,7 @@ public class ShowTipsTop extends HttpServlet {//显示攻略Servlet
 				tp.setReadcount(r.getInt(5));
 				tp.setUser(r.getString(4));
 				tp.setTime(r.getDate(7));
+				tp.setPhoto(r.getString(10));
 				list1.add(tp);
 			}
 			

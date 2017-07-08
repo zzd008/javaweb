@@ -13,6 +13,13 @@ public class TipsTop implements Serializable{//¹¥ÂÔBean
 	private Date time;
 	private int showflag;
 	private String label;
+	public String photo;//ÓÃ»§Í·Ïñ
+	public String getPhoto() {
+		return photo;
+	}
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
 	public String getLabel() {
 		return label;
 	}
